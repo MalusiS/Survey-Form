@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" 
+        rel="stylesheet">
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <div class="form">
+    <header>
+    <h1 id="title">MalusiS Survey Form</h1>
+    <p id="description">Thank you for your feedback, your input is highly valued.</p>
+    </header>
+
+    <form id="survey-form" action="https://formspree.io/f/mqkvowey" method="POST">
+
+      <div class="form-fields">
+      <label for="name" id="name-label">Name</label>
+      <input id="name" type="text" placeholder="Firstname Lastname" class="field-control" required>
+      </div>
+
+      <div class="form-fields">
+      <label for="email" id="email-label">Email</label>
+      <input id="email" type="email" placeholder="example@email.com" class="field-control" required>
+      </div>
+
+      <div class="form-fields">
+      <label for="number" id="number-label">Age</label>
+      <input id="number" type="number" min="16" max="100" placeholder="25" class="field-control">
+      </div>
+
+      <div class="form-fields">
+      <p>What do you do?</p>
+      <select id="dropdown" class="field-control">
+        <option disabled selected value class="check">(select the applicable)</option>
+        <option>Student</option>
+        <option>Full-time Employee</option>
+        <option>Business Owner</option>
+        <option>Other</option>
+      </select>
+      </div>
+
+      <div class="form-fields">
+      <p>Have you made use of my services before?</p>
+      <label>
+        <input name="former-client" type="radio" value="yes" class="radio" checked> Yes
+      </label>
+      <label>
+        <input name="former-client" type="radio" value="no" class="radio"> No
+      </label>
+      <label>
+        <input name="former-client" type="radio" value="not-sure" class="radio"> Not Sure
+      </label>
+      </div>
+
+      <div class="form-fields">
+      <p>What service do you need now?</p>
+      <select id="dropdown" class="field-control">
+        <option disabled selected value class="check">(select the applicable)</option>
+        <option>Web Design</option>
+        <option>SEO Services</option>
+        <option>Social Media Marketing</option>
+        <option>Other</option>
+      </select>
+      </div>
+
+      <div class="form-fields">
+      <p>What other services would you like me to offer?</p>
+      <label>
+        <input name="add-service" type="checkbox" value="mobile-app-development" class="check-input"> Mobile App Development
+        </label>
+        <label>
+          <input name="add-service" type="checkbox" value="ui-and-ux-services" class="check-input"> UI and UX Services
+        </label>
+        <label>
+          <input name="add-service" type="checkbox" value="maintenance-services" class="check-input"> Maintenance Services
+          </label>
+        <label>
+          <input name="add-service" type="checkbox" value="software-testing" class="check-input"> Software Testing
+        </label>
+        <label>
+        <input name="add-service" type="checkbox" value="cloud-computing" class="check-input"> Cloud Computing
+        </label>
+        </div>
+
+        <div class="form-fields">
+        <p>Please share your comments or suggestions...</p>
+        <textarea placeholder="Write your comment or suggestion"></textarea>
+        </div>
+
+        <div class="form-fields">
+        <button id="submit" type="submit">Submit</button>
+        </div>
+
+    </form>
+    
+    </div>
+  </body>
+</html>
